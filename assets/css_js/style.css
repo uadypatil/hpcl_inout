@@ -1,0 +1,292 @@
+/* date: 09-04-2024 || name: shubham chhanwal */
+*{
+     font-family: "Montserrat", sans-serif;
+}
+
+
+.overall-body{
+     /* background-color: #eff4f6; */
+     background-color: #ffffff;
+     /* background-color: #493cff; */
+}
+/* Sidebar styling */
+.sidebar {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     width: 300px;
+     background-color: #f8f9fa;
+
+     transition: left 0.3s ease;
+}
+
+/* Sidebar links styling */
+.sidebar a {
+     padding: 10px 20px;
+     display: block;
+}
+
+/* Main content margin to accommodate sidebar */
+.main-content {
+     margin-left: 300px;
+     width: calc(100% - 300px);
+     /* Adjusted width */
+     transition: margin-left 0.3s ease, width 0.3s ease;
+     /* Transition for width added */
+}
+
+/* Navbar styling */
+.navbar {
+     /* background-color: #e5eff2; */
+     background-color: #ffffff;
+     /* border-bottom: 1px solid rgba(150,150,150,0.5); */
+     /* border: 1px solid rgb(100, 100, 100); */
+     width: 100%;
+     /* Full width */
+     display: flex;
+     justify-content: center;
+     /* Center the Officer text */
+     align-items: center;
+     /* Add shadow */
+     box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.2), 5px 2px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.navbar .container-fluid {
+     vertical-align: middle;
+}
+
+/* Toggle button styling */
+#sidebar-toggle {
+     background-color: transparent;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     margin-right: auto;
+     /* Push the button to the far left */
+}
+
+/* Sidebar open class */
+.sidebar-open .sidebar {
+     left: 0;
+}
+
+/* Sidebar closed class */
+.sidebar-closed .sidebar {
+     left: -300px;
+}
+
+/* Main content margin with sidebar open */
+.sidebar-open .main-content {
+     margin-left: 300px;
+     width: calc(100% - 300px);
+     /* Adjusted width */
+}
+
+/* Main content margin with sidebar closed */
+.sidebar-closed .main-content {
+     margin-left: 0;
+     width: 100%;
+     /* Full width when sidebar closed */
+}
+
+/* Navbar width with sidebar open */
+.sidebar-open .navbar {
+     width: calc(100% - 300px);
+     /* Adjusted width */
+}
+
+/* Navbar width with sidebar closed */
+.sidebar-closed .navbar {
+     width: 100%;
+     /* Full width when sidebar closed */
+}
+
+.demo-card {
+     height: 100px;
+     width: 100px;
+     /* background-color: #c1e1ec; */
+     background-color: blue;
+     margin: 10px;
+}
+
+.card {
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* Navbar ends here */
+
+/* ------------------------------------------- */
+/* code by Sonal bhirud | added on: 10-05-2024 */
+/* ------------------------------------------- */
+/* Sidebar styling */
+.sidebar {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     width: 300px;
+     /* background-color: #f8f9fa; */
+     /* background-image: linear-gradient(180deg, rgb(59, 81, 255), skyblue); */
+     background-color: rgb(134, 126, 248);
+
+     transition: left 0.3s ease;
+}
+
+/* .sidebar-link[data-bs-toggle="collapse"]::after {
+     border: solid;
+     border-width: 0 .075rem .075rem 0;
+     content: "";
+     display: inline-block;
+     padding: 2px;
+     position: absolute;
+     right: 1.5rem;
+     top: 1.4rem;
+     transform: rotate(180deg);
+     transition: all .2s ease-out;
+}
+
+-135
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+     transform: rotate(270deg);
+     transition: all;
+     .2s ease-out;
+} */
+/* 
+.sidebar-link[data-bs-toggle="collapse"]::after {
+     border: solid;
+     border-width: 0 .075rem .075rem 0;
+     display: inline-block;
+     padding: 2px;
+     position: absolute;
+     right: 1.5rem;
+     top: 1.4rem;
+     transform: rotate(180deg);
+     transition: all .2s ease-out;
+ }
+ /* -135 */
+
+ /* .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+     transform: rotate(-180deg);
+     transition: all; /*.2s ease-out; * /
+ }
+  */
+
+  
+
+.sidebar-link[data-bs-toggle="collapse"]:after{
+     border: solid;
+     border-width: 0 .075rem .075rem 0;
+     display: inline-block;
+     padding: 2px;
+     position: absolute;
+     right: 1.5rem;
+     top: 1.4rem;
+     transform: rotate(180deg);
+     transition: all .2s ease-out;
+     
+ }
+ /* -135 */
+
+ .sidebar-link[data-bs-toggle="collapse"].collapsed:after{
+     transform: rotate(-180deg);
+     transition: all; /*.2s ease-out; */
+ }
+ 
+
+
+
+/* 45 */
+
+a.sidebar-link {
+     padding: .625rem 1.625rem;
+     color: #ffffff;
+     position: relative;
+     display: block;
+     font-size: 20px;
+}
+
+
+
+.sidebar-nav {
+     list-style-type: none;
+}
+
+
+
+
+
+/* Sidebar links styling */
+.sidebar a {
+     padding: 10px 20px;
+     display: block;
+}
+
+/* Main content margin to accommodate sidebar */
+.main-content {
+     margin-left: 300px;
+     width: calc(100% - 300px);
+     /* Adjusted width */
+     transition: margin-left 0.3s ease, width 0.3s ease;
+     /* Transition for width added */
+}
+
+a {
+     text-decoration: none;
+}
+
+
+
+/* Toggle button styling */
+#sidebar-toggle {
+     background-color: transparent;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     margin-right: auto;
+     /* Push the button to the far left */
+}
+
+/* Sidebar open class */
+.sidebar-open .sidebar {
+     left: 0;
+}
+
+/* Sidebar closed class */
+.sidebar-closed .sidebar {
+     left: -300px;
+}
+
+/* Main content margin with sidebar open */
+.sidebar-open .main-content {
+     margin-left: 300px;
+     width: calc(100% - 300px);
+     /* Adjusted width */
+}
+
+/* Main content margin with sidebar closed */
+.sidebar-closed .main-content {
+     margin-left: 0;
+     width: 100%;
+     /* Full width when sidebar closed */
+}
+
+
+/* Navbar width with sidebar open */
+.sidebar-open .navbar {
+     width: calc(100% - 300px);
+     /* Adjusted width */
+}
+
+/* Navbar width with sidebar closed */
+.sidebar-closed .navbar {
+     width: 100%;
+     /* Full width when sidebar closed */
+}
+
+.link-hover:hover{
+     transition: 0.1s;
+     color: rgb(210,210,255);
+}

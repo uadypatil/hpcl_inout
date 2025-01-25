@@ -1,0 +1,64 @@
+      /* Sidebar styling */
+      .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 260px;
+        background-image: linear-gradient(180deg, rgb(59, 81, 255), skyblue);
+        transition: left 0.3s ease;
+    }
+    
+    /* Sidebar links styling */
+    .sidebar a {
+        padding: 10px 20px;
+        display: block;
+        color: #ffffff;
+        position: relative;
+        font-size: 20px;
+    }
+    
+    /* Main content margin to accommodate sidebar */
+    .main-content {
+        margin-left: 260px;
+        width: calc(100% - 260px);
+        transition: margin-left 0.3s ease, width 0.3s ease;
+    }
+    
+    /* Toggle button styling */
+    #sidebar-toggle {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-right: auto;
+    }
+    
+    /* Navbar styling */
+    .navbar {
+        background-color: #c1e1ec;
+        border-bottom: 1px solid #dee2e6;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Bootstrap Dropdown Arrow Styling */
+    .sidebar-link[data-bs-toggle="collapse"]::after {
+        border: solid;
+        border-width: 0 .075rem .075rem 0;
+        content: "";
+        display: inline-block;
+        padding: 2px;
+        position: absolute;
+        right: 1.5rem;
+        top: 1.4rem;
+        transform: rotate(-270deg);
+        transition: all .2s ease-out;
+    }
+    
+    .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+        transition: all .2s ease-out;
+    }
